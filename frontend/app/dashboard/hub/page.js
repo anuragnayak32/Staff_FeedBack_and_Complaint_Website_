@@ -211,7 +211,7 @@ export default function HubPage() {
                       <p className="text-sm text-muted-foreground line-clamp-2">{item.content}</p>
                     )}
                     {item.type === 'impact' && (
-                      <div className="mt-2 grid grid-cols-3 gap-3">
+                      <div className="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-3">
                         {[['Raised', item.whatWasRaised], ['Action', item.actionTaken], ['Changed', item.whatChanged]].map(([label, val]) => (
                           <div key={label} className="bg-slate-50 rounded-lg p-2.5">
                             <p className="text-xs font-semibold text-muted-foreground mb-1">{label}</p>

@@ -342,7 +342,7 @@ export default function PollsPage() {
   const closed = polls.filter(p => !p.isActive);
 
   return (
-    <div className="max-w-2xl">
+    <div className="w-full max-w-2xl">
       <div className="page-header flex items-center justify-between">
         <div>
           <h1 className="page-title">Polls</h1>

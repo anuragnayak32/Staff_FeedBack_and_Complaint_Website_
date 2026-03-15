@@ -76,7 +76,7 @@ export default function SubmitCasePage() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="w-full max-w-2xl mx-auto">
       <div className="page-header flex items-start justify-between">
         <div>
           <button

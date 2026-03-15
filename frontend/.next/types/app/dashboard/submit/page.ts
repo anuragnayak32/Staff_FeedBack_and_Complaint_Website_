@@ -1,4 +1,4 @@
-// File: C:\Users\subha\OneDrive\Desktop\neoconnect\neoconnect\frontend\app\dashboard\submit\page.js
+// File: C:\Users\subha\OneDrive\Desktop\neoconnect_Desktop\neoconnect\frontend\app\dashboard\submit\page.js
 import * as entry from '../../../../../app/dashboard/submit/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

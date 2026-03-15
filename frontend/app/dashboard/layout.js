@@ -28,8 +28,9 @@ function DashboardInner({ children }) {
   return (
     <div className="flex min-h-screen bg-slate-50">
       <Sidebar />
-      <main className="flex-1 overflow-y-auto">
-        <div className="max-w-6xl mx-auto px-6 py-8 animate-fade-in">
+      {/* pt-14 on mobile to clear the fixed top bar; no padding on lg */}
+      <main className="flex-1 overflow-y-auto pt-14 lg:pt-0">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 lg:py-8 animate-fade-in">
           {children}
         </div>
       </main>
