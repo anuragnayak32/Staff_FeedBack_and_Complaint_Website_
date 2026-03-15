@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --background: 220 25% 97%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 226 71% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 93%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 220 14% 93%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 226 71% 96%;
+    --accent-foreground: 226 71% 30%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 88%;
+    --input: 220 13% 88%;
+    --ring: 226 71% 50%;
+    --radius: 0.625rem;
+
+    /* Status colors */
+    --status-new: 220 9% 46%;
+    --status-assigned: 199 89% 48%;
+    --status-inprogress: 262 83% 58%;
+    --status-pending: 38 92% 50%;
+    --status-resolved: 142 71% 45%;
+    --status-escalated: 0 84% 60%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'DM Sans', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Syne', sans-serif;
+  }
+}
+
+@layer utilities {
+  .neo-card {
+    @apply bg-white rounded-xl border border-border shadow-sm;
+  }
+  .neo-card-hover {
+    @apply neo-card transition-all duration-200 hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5;
+  }
+  .status-badge {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold;
+  }
+  .page-header {
+    @apply mb-8;
+  }
+  .page-title {
+    @apply text-3xl font-bold tracking-tight text-foreground;
+    font-family: 'Syne', sans-serif;
+  }
+  .page-subtitle {
+    @apply text-muted-foreground mt-1;
+  }
+}
