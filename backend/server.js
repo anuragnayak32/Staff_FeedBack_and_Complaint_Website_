@@ -11,7 +11,11 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: [
+    "http://localhost:3000",
+    "https://staff-feed-back-and-complaint-websi.vercel.app",
+    "https://staff-feed-back-and-complaint-website-90mbbtrd9.vercel.app"
+  ],
   credentials: true
 }));
 app.use(express.json());
