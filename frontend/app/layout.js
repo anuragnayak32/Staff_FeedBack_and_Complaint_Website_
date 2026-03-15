@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'NeoConnect — Staff Feedback Platform',
+  title: 'Staff_Feedback_and_Complaint_Management_Platform',
   description: 'A transparent, accountable staff feedback and complaint management platform',
 }
 
