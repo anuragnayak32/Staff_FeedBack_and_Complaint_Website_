@@ -79,7 +79,7 @@ neoconnect/
 
 ### Prerequisites
 - Node.js v18+
-- MongoDB running locally (`mongod`) or a MongoDB Atlas URI
+- MongoDB Atlas URI
 - npm or yarn
 
 ---
@@ -110,7 +110,7 @@ Edit `.env`:
 
 ```env
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/neoconnect
+MONGODB_URI=Mongodb_connection_string_here
 JWT_SECRET=your_super_secret_jwt_key_here
 JWT_EXPIRE=7d
 NODE_ENV=development
@@ -125,7 +125,6 @@ npm run seed
 This creates:
 | Role | Email | Password |
 |------|-------|----------|
-| Admin | admin@neoconnect.com | Admin@NeoConnect123 |
 | Secretariat | secretariat@neoconnect.com | Secretariat@123 |
 | Case Manager | casemanager@neoconnect.com | CaseManager@123 |
 
